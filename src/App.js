@@ -44,14 +44,14 @@ const States = () => {
 
   return (
     <div>
-      <h1 style={{textAlign:"center"}}>
-        Select Location 
-      </h1>
+      <h1 style={{ textAlign: "center" }}>Select Location</h1>
 
-      <div style={{  display: "flex",
-          alignItems: "center",
-          justifyContent: "space-evenly",
-          flexDirection: "row"}}>
+      <div style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-evenly",
+        flexDirection: "row"
+      }}>
         <select
           value={selectedCountry}
           onChange={(e) => setSelectedCountry(e.target.value)}
@@ -110,8 +110,8 @@ const States = () => {
       </div>
 
       {selectedCity && selectedState && selectedCountry && (
-        <h6 style={{textAlign:"center",fontSize: '1em'}}>
-          You Selected   
+        <h6 style={{ textAlign: "center", fontSize: '1em' }}>
+          You Selected 
           <span style={{ fontWeight: 'bold', fontSize: '1.5em' }}> {selectedCity}, </span>
           <span style={{ color: 'gray', fontSize: '1em' }}> {selectedState}, </span>
           <span style={{ color: 'gray', fontSize: '1em' }}> {selectedCountry} </span>

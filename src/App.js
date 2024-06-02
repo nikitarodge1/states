@@ -110,8 +110,8 @@ const States = () => {
       </div>
 
       {selectedCity && selectedState && selectedCountry && (
-        <h6 style={{ textAlign: "center", fontSize: '1em' }}>
-          You Selected 
+        <h6 style={{ textAlign: "center", fontSize: '1em' }} id="selected-location">
+          You selected 
           <span style={{ fontWeight: 'bold', fontSize: '1.5em' }}> {selectedCity}, </span>
           <span style={{ color: 'gray', fontSize: '1em' }}> {selectedState}, </span>
           <span style={{ color: 'gray', fontSize: '1em' }}> {selectedCountry} </span>
